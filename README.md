@@ -24,7 +24,7 @@ npm i
 npm run start-remote 
 `
 
- npm run start-remote 启动webpack dev server ，可以通过http://localhost:8080 访问， 也可以通过手机远程访问ip, 远程访问前需要修改apo.config.js 中的API_URL
+npm run start-remote 启动webpack dev server ，可以通过http://localhost:8080 访问， 也可以通过手机远程访问ip, 远程访问前需要修改apo.config.js 中的API_URL
 
 # 打包
 `
@@ -33,7 +33,6 @@ npm run dist
 1. 通过 npm run dist 打包，所有的相关的文件都会被打包到 dist 文件夹。
 2. 打包前需要修改app.config.js中的参数，以正确支持服务器上的路径
 
-`
 const CDN_PATH = '//cdnserver.com';
 const publicPath = process.env.NODE_ENV == 'production' ? `${CDN_PATH}/home` : '';
 /**
@@ -47,8 +46,6 @@ const prodPrefix = process.env.NODE_ENV == 'production' ? '/prefix' : '';
  * const API_URL = process.env.NODE_ENV == 'production' ? '//devserver.com' : '//192.168.1.2:3444' 
  */
 const API_URL = process.env.NODE_ENV == 'production' ? '//devserver.com' : '//192.168.1.2:3444' 
-
-`
 
 #  部署
 使用./deploy.sh进行部署，或者拷贝dist 进行部署。

@@ -2,6 +2,11 @@
 本项目是一个脚手架，用来方便制作单页页面。适用于小项目。
 
 # 安装
+1. 这个项目是github 模板项目，可以直接使用模板功能
+2. 使用脚本下载安装使用
+`
+curl -s https://nasetech.github.io/standard-setup/install.sh | bash
+`
 
 # 运行开发模式
 npm run start-remote 启动webpack dev server ，可以通过http://localhost:8080 访问， 也可以通过手机远程访问ip, 远程访问前需要修改apo.config.js 中的API_URL

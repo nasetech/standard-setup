@@ -11,3 +11,4 @@
 5. src 中一级文件夹必须包含index.html, main.js, css/, image/
 6. 注意main.js是一个入口文件， 用来import所有需要的依赖,可以import css和其他资源。
 7. 代理访问线上服务需要启动node的代理 node proxy.js
+8. 支持多个文件夹，生成多个和文件夹同名的html

@@ -4,6 +4,7 @@
 # 安装
 1. 这个项目是github 模板项目，可以直接使用模板功能
 2. 使用脚本下载安装使用
+
 `
 curl -s https://nasetech.github.io/standard-setup/install.sh | bash
 `

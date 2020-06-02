@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title></title>
+    <title>测试页面</title>
     <link rel="apple-touch-icon" sizes="57x57" href="<%= htmlWebpackPlugin.options.prefix %>/image/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<%= htmlWebpackPlugin.options.prefix %>/image/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="<%= htmlWebpackPlugin.options.prefix %>/image/apple-icon-72x72.png">
@@ -25,7 +25,15 @@
     <meta name="description" content="全景浏览设置" >
     <meta name="keywords" content="app开发,软件开发,软件咨询,软件报价,软件定制,定制,公众号支付,IoT,物联网,微信支付,微信定制开发,微信,微信公众平台,微信网站,微信推广,微信开发,微信营销公司,微信公众号,微信公众平台开发,网站制作,微信制作,汽车微信,微信建设,微营销,网站开发,手机APP应用开发,安卓应用开发,iPhone应用开发,苹果手机应用开发,点餐系统开发,手机管理系统开发,OA开发,响应式网站开发,杭州,纳舍科技,纳舍,自适应网站开发,杭州纳舍科技有限公司,纳舍,企业软件,微信小程序,公众号,微信公众号,IoT,管理系统,软件开发订制,企业软件系统,商城,小程序商城,小程序会员卡,小程序优惠卡">
     <script>
-      window.IMAGE_PREFIX = '<%= htmlWebpackPlugin.options.imagePrefix %>/';
+      window.IMAGE_PREFIX = '<%= htmlWebpackPlugin.options.imagePrefix %>';
+      window.API_URL = '<%= htmlWebpackPlugin.options.apiUrl %>';
+      window.IS_MOBILE = (function() {
+        let check = false;
+        if (typeof window.orientation !== 'undefined'){
+          check = true;
+        }
+        return check;
+      })()
       //CNZZ 统计声明_czc对象:
       var _czc = _czc || [];
       var siteId = '1277825292';
@@ -45,46 +53,6 @@
       with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
       })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
     </script> -->
-
-    <div id="page1">
-      <div class="title animate__animated animate__fadeInUp"></div>
-      <div class="enter_btn_cont animate__animated animate__fadeInUp animate__delay-1s">
-        点击进入全景展示 》
-      </div>
-      <div class="footnote animate__animated animate__fadeInUp animate__delay-1s"></div>
-    </div>
-    <div id="page2">
-      <div class="title animate__animated animate__fadeInRight"></div>
-      <div class="footnote animate__animated animate__fadeInUp animate__delay-1s"></div>
-      <div id="map_cont" class=" animate__animated animate__slideInLeft">
-          <div id="map">
-              <img src='<%= htmlWebpackPlugin.options.imagePrefix %>/map.png' class="page-img">
-              <!-- <div style="top:0;left:0;width:100px;height:100px; background-color: red;"></div> -->
-              <div id="spin-1" class="mark">
-                  <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                  </div>
-                </div>
-                <div id="spin-2" class="mark">
-                  <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                  </div>
-                </div>
-                <div id="spin-3" class="mark">
-                  <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                  </div>
-                </div>
-          </div>
-      </div>
-
-    </div>
-
-
-
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277825292'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277825292%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
   </body>

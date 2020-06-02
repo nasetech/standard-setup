@@ -6,7 +6,13 @@
 2. 使用脚本下载安装使用, 支持Linux和Mac
 
 `
-curl -s https://nasetech.github.io/standard-setup/install.sh | bash
+curl -s https://nasetech.github.io/standard-setup/install.sh | bash 
+`
+
+或者可以添加新项目名称参数
+
+`
+curl -s https://nasetech.github.io/standard-setup/install.sh | bash [新项目名称]
 `
 
 3. Windows可以下载解压

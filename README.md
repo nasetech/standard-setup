@@ -47,7 +47,7 @@ const API_URL = process.env.NODE_ENV == 'production' ? '//devserver.com' : '//19
 使用./deploy.sh进行部署，或者拷贝dist 进行部署。
 
 ## 其他
-1. 开发模式下，所有src的文件改动都会自动起作用，其他可能需要手动刷新页面，或者可能需要重新开发webpack server: npm run start-remote
+1. 开发模式下，所有src的文件改动都会自动起作用，其他可能需要手动刷新页面，或者可能需要重新启动webpack server: npm run start-remote
 2. src 中一级文件夹的名称就是打包后html的路由，比如src->test 文件夹的代码会最终生成 http://localhost:8080/test.html
 3. src 中一级文件夹必须包含index.html, main.js, css/, image/
 4. 注意main.js是一个入口文件， 用来import所有需要的依赖,可以import css和其他资源。

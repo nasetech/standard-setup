@@ -3,11 +3,12 @@
 
 # 安装
 1. 这个项目是github 模板项目，可以直接使用模板功能
-2. 使用脚本下载安装使用
+2. 使用脚本下载安装使用, 支持Linux和Mac
 
 `
 curl -s https://nasetech.github.io/standard-setup/install.sh | bash
 `
+3. Windows可以下载解压
 
 # 运行开发模式
 npm run start-remote 启动webpack dev server ，可以通过http://localhost:8080 访问， 也可以通过手机远程访问ip, 远程访问前需要修改apo.config.js 中的API_URL
